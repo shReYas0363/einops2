@@ -15,14 +15,11 @@ def substitute_vars(pattern: str, kwargs: dict) -> str:
 
 def rearrange(tensor:np.ndarray, pattern:str, **kwargs) -> np.ndarray:
     new_pattern= substitute_vars(pattern, kwargs)
-    if main_parser(pattern):
-        left,right= new_pattern.split('->')
-        left_tokens = identify_left(left)
-        plan = process_right(right, left_tokens)
-        transformed=apply_recipe(tensor,plan)
-        return transformed
-    else:       
-        raise ValueError(f"Invalid einops expression: {pattern}")
-    
+    left,right= new_pattern.split('->')
+    left_tokens = identify_left(left)
+    plan = process_right(right, left_tokens)
+    transformed=apply_recipe(tensor,plan)
+    return transformed
+
 
 

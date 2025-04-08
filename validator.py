@@ -1,4 +1,5 @@
 import re
+#Initially intended to use this, but causing some errors, the recipe is changed that it directly works better than this
 '''The overall algorithm to Check if a einops expression is valid or not (Used GPT to give like a better structure and a shorter expression syntax 
 and evaluate some good test cases, which I may have missed out)
 For overall

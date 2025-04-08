@@ -1,9 +1,8 @@
 # 🧠 Minimal Einops Implementation 
 
 This is a minimalistic reimplementation of the core functionality of [`einops`](https://github.com/arogozhnikov/einops). Supports only numpy.
-Initially wanted to do a Rust parser and python frontend (for the speed, but failed terribly)
-einops2.py is the main module - which has a input reader and has the rearrange function
-validator.py - Checks whether an einops expression is valid  (algorithm in the code)
+Initially wanted to do a Rust parser and python frontend (for the speed, but failed terribly).
+einops2.py is the main module - which has a input reader and has the rearrange function.
 Recipe_converter.py - CHecks input and output sides for a valid expression and converts into the numpy actions (algorithm in the code)
 
 
